@@ -37,6 +37,23 @@ public class SortListDemo {
 		System.out.println("Employees sorted by salary: ");
 		System.out.println(employees);
 		
+		System.out.println("Employees sorted by salary using anonymous class: ");
+		employees = Database.getEmployees();
+		Collections.sort(employees, new Comparator<Employee>() {
+
+			@Override
+			public int compare(Employee o1, Employee o2) {
+				return (int)(o1.getSalary() - o2.getSalary());
+			}
+			
+		});
+		System.out.println(employees);
+		
+		System.out.println("Employees sorted by salary using lambda expression: ");
+		employees = Database.getEmployees();
+		Collections.sort(employees, (o1, o2) -> (int)(o1.getSalary() - o2.getSalary()));
+		System.out.println(employees);
+		
 
 	}
 
