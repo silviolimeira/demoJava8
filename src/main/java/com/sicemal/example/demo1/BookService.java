@@ -8,7 +8,15 @@ public class BookService {
 	
 	public List<Book> getBooksInSort() {
 		List<Book> books = new BookDAO().getBooks();
-		Collections.sort(books, new MyComparator());
+		// Anonymous implementation Comparator - Get sorted list of books
+		Collections.sort(books, new Comparator<Book>() {
+
+			@Override
+			public int compare(Book o1, Book o2) {
+				return o1.getName().compareTo(o2.getName());
+			}
+			
+		});
 		return books;
 	}
 	
@@ -18,13 +26,4 @@ public class BookService {
 
 }
 
-class MyComparator implements Comparator<Book> {
 
-	@Override
-	public int compare(Book o1, Book o2) {
-		// descending order
-		//return o2.getName().compareTo(o1.getName());
-		return o1.getName().compareTo(o2.getName());
-	}
-	
-}
