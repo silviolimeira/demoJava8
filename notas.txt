@@ -16,3 +16,24 @@ mvn compile exec:java
 
 Java 8 - Consumer, Predicate, Supplier Example
 
+Java 8 - Stream API | forEach & filter method example
+
+- Functional Programming
+- Code Reduce
+- Bulk Operation
+
+Filter - for conditional check
+forEach - for iteration
+
+- Stream API is used to process collections of objects.
+      A stream is a sequence of objects that supports various methods
+  which can be pipelined to produce the desired result.
+
+- A stream is not a data structure instead it takes input from the
+     Collections, Arrays or I/O channels.
+     
+- Streams don't change the original data structure, they only
+      provide the result as per the pipelined methods.
+      
+Java 8 - Sort List a List Using Lambda
+
