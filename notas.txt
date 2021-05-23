@@ -1,4 +1,7 @@
 
+Java 8 complete tutorial
+ref: https://www.youtube.com/watch?v=ePJrt5-G8eM&t=323s
+
 maven-archetype-quickstart
 
 Usage: mvn archetype:generate -DarchetypeGroupId=org.apache.maven.archetypes -DarchetypeArtifactId=maven-archetype-quickstart -DarchetypeVersion=1.4
