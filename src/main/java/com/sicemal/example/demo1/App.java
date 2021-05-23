@@ -10,9 +10,7 @@ public class App
 	public static void main(String[] args) {
 		
 		// Implement interface using lambda expression with parameters and result return
-		Calculator calculator = (a, b) -> {
-			return (a - b);
-		};
+		Calculator calculator = (a, b) -> a - b;
 		System.out.println("Result (8-3): " + calculator.subtract(8,3));
 		
 		
