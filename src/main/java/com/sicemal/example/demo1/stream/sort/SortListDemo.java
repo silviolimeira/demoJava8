@@ -54,6 +54,17 @@ public class SortListDemo {
 		Collections.sort(employees, (o1, o2) -> (int)(o1.getSalary() - o2.getSalary()));
 		System.out.println(employees);
 		
+		System.out.println("Employees sorted by salary using stream: ");
+		employees = Database.getEmployees();
+		employees.stream().sorted((o1, o2) -> (int)(o1.getSalary() - o2.getSalary())).forEach(System.out::println);
+		
+		System.out.println("Employees sorted by salary using stream sorted with Comparator: ");
+		employees = Database.getEmployees();
+		employees.stream().sorted(Comparator.comparing(emp -> emp.getSalary())).forEach(System.out::println);
+		
+		System.out.println("Employees sorted by salary using stream sorted with Comparator.comparing::getName: ");
+		employees = Database.getEmployees();
+		employees.stream().sorted(Comparator.comparing(Employee::getName)).forEach(System.out::println);
 
 	}
 
