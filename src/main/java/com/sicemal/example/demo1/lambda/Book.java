@@ -1,4 +1,4 @@
-package com.sicemal.example.demo1;
+package com.sicemal.example.demo1.lambda;
 
 public class Book {
 

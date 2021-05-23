@@ -13,3 +13,6 @@ mvn compile exec:java -Dexec.mainClass="com.sicemal.example.demo1.App" -Dexec.ar
 
 mvn compile exec:java
 
+
+Java 8 - Consumer, Predicate, Supplier Example
+
