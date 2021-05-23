@@ -37,3 +37,5 @@ forEach - for iteration
       
 Java 8 - Sort List a List Using Lambda
 
+Java 8 - Sort a Map Using Lambda
+
